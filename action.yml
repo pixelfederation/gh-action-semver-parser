@@ -1,10 +1,10 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Pixel flavored Semver parsing Github action'
+description: 'Pixel flavored Semver parsing Github action'
+author: 'ahamsik@pixelfederation.com'
 inputs:
-  milliseconds: # change this
+  tag:
     required: true
-    description: 'input description here'
+    description: 'Repository tag in pixel format: 8.1.3-fpm-bullseye_3'
     default: 'default value if applicable'
 runs:
   using: 'node16'
