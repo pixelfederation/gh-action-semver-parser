@@ -5,7 +5,6 @@ inputs:
   tag:
     required: true
     description: 'Repository tag in pixel format: 8.1.3-fpm-bullseye_3'
-    default: 'default value if applicable'
 runs:
   using: 'node16'
   main: 'dist/index.js'
