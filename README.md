@@ -13,7 +13,7 @@ These tags are in a form of `8.1.3-fpm-bullseye_2` -> upstream_build-version
 
 ## Semver GHA outputs
 
-For a given input `8.1.3-fpm-bullseye_2` this acction will output following strings.
+For a given input `tag = 8.1.3-fpm-bullseye_2` this acction will output following strings.
 
 ```
 pft = "8.1.3-fpm-bullseye_2"
@@ -26,6 +26,8 @@ mmpr = "8.1.3-bullseye"
 mmr = "8.1-bullseye"
 
 m = "8"
+
+release = "bullseye"
 ```
 
 if GHA action can't parse semver string and is not able to find required fields it will set output to undefined.
