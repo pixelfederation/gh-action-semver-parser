@@ -1,4 +1,4 @@
- name: 'Pixel flavored Semver parsing Github action'
+name: 'Pixel flavored Semver parsing Github action'
 description: 'Pixel flavored Semver parsing Github action'
 author: 'ahamsik@pixelfederation.com'
 inputs:
