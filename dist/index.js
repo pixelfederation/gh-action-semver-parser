@@ -63,6 +63,8 @@ function run() {
             // Create tags 8.1.3-bullseye and 8.1-bullseye
             core.setOutput('mmpr', `${sm.major}.${sm.minor}.${sm.patch}-${release}`);
             core.setOutput('mmr', `${sm.major}.${sm.minor}-${release}`);
+            // Create output with just major version
+            core.setOutput('m', `${sm.major}`);
             // Output image debian release
             core.setOutput('release', release);
         }

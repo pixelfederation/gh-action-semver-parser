@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "gh-action-semver-parser",
+  "version": "0.1.3",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Github Action for parsing semver strings",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
