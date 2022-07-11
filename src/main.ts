@@ -29,6 +29,9 @@ async function run(): Promise<void> {
     core.setOutput('mmpr', `${sm!.major}.${sm!.minor}.${sm!.patch}-${release}`)
     core.setOutput('mmr', `${sm!.major}.${sm!.minor}-${release}`)
 
+    // Create output with just major version
+    core.setOutput('m', `${sm!.major}`)
+
     // Output image debian release
     core.setOutput('release', release)
   } catch (error) {
