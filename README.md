@@ -15,7 +15,17 @@ These tags are in a form of `8.1.3-fpm-bullseye_2` -> upstream_build-version
 
 For a given input `tag = 8.1.3-fpm-bullseye_2` this acction will output following strings.
 
+Usage:
 ```
+- name: Parse tag semver string
+  id: semver
+  uses: pixelfederation/gh-action-semver-parser@wip
+  with:
+    tag: "8.1.3-fpm-bullseye_2"
+```
+
+Outputs:
+```    
 pft = "8.1.3-fpm-bullseye_2"
 ut = "8.1.3-fpm-bullseye"
 
