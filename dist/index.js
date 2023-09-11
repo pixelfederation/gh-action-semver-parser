@@ -54,7 +54,7 @@ function run() {
             if (!sm) {
                 core.setFailed(`Could not parse tag: ${ut}`);
             }
-            const release = String(sm.prerelease).split('-')[1];
+            const release = String(sm.prerelease).split('-').slice(-1)[0];
             core.setOutput('pft', tag);
             core.setOutput('ut', ut);
             // Create output for 8.1.3 and 8.1

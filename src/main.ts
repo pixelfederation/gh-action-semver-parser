@@ -16,7 +16,7 @@ async function run(): Promise<void> {
       core.setFailed(`Could not parse tag: ${ut}`)
     }
 
-    const release: string = String(sm!.prerelease).split('-')[1]
+    const release: string = String(sm!.prerelease).split('-').slice(-1)[0]
 
     core.setOutput('pft', tag)
     core.setOutput('ut', ut)
